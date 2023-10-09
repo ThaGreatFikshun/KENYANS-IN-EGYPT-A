@@ -674,9 +674,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our activities
+# Our membership
 --------------------------------------------------------------*/
-.activities .icon-box {
+.membership .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -687,7 +687,7 @@ section {
   z-index: 1;
 }
 
-.activities .icon-box::before {
+.membership .icon-box::before {
   content: "";
   position: absolute;
   background: #7a92ba;
@@ -700,16 +700,7 @@ section {
   z-index: -1;
 }
 
-.activities .icon-box:hover::before {
-  background: #115b9c ;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
-}
-
-.activities .icon {
+.membership .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
   display: inline-block;
@@ -721,61 +712,47 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.activities .icon i {
+.membership .icon i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
 }
 
-.activities .title {
+.membership .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.activities .title a {
+.membership .title a {
   color: #425451;
 }
 
-.activities .description {
+.membership .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
-
-.activities .icon-box:hover .title a,
-.activities .icon-box:hover .description {
-  color: #fff;
-}
-
-.activities .icon-box:hover .icon {
-  background: #fff;
-}
-
-.activities .icon-box:hover .icon i {
-  color: #115b9c ;
-}
-
 /*--------------------------------------------------------------
-# Cta
+# campaign
 --------------------------------------------------------------*/
-.cta {
+.campaign {
   background: linear-gradient(rgba(66, 84, 81, 0.5), rgba(43, 56, 54, 0.5)), url("../images/testimonials/adventure.jpeg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
-.cta h3 {
+.campaign h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
-.cta p {
+.campaign p {
   color: #fff;
 }
 
-.cta .cta-btn {
+.campaign .campaign-btn {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -789,52 +766,119 @@ section {
   color: #fff;
 }
 
-.cta .cta-btn:hover {
+.campaign .campaign-btn:hover {
   background: #115b9c ;
   border: 2px solid #115b9c ;
 }
 
 /*--------------------------------------------------------------
-# More activities
+# Activity section 
 --------------------------------------------------------------*/
-.more-activities img {
+#activito{
+  background: #efefef;
+  padding: 40x 0;
+
+}
+.single-activito{
+  background-color: #fff;
+  display: inline;
+  float: left;
+  margin: 10px auto;
+  width: 100%;
+  transition: 0.5s;  
+}
+.single-activito:hover{
+  box-shadow: 0 2px 20px #333;
+
+}
+.activito-head{
+  background-color: #115b9c;
+  display: inline;
+  float: left;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+}
+.activito-head h2
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.activito-head p{
+  color: #ccc;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+#activito span{
+  font-size: 15px;
+}
+.activito-content{
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+}
+.activito-content ul li{
+  border-bottom: 1px solid #efefef;
+  list-style: none;
+  padding: 15px 10px;
+}
+ul li{
+  border: none;
+}
+.activito-button{
+  display: inline;
+  float: left;
+  padding:  15px 15px 30px;
+  text-align: center;
+  width: 100%;
+}
+/*--------------------------------------------------------------
+# More membership
+--------------------------------------------------------------*/
+.more-membership img {
   border-radius: 0;
 }
 
-.more-activities .card {
+.more-membership .card {
   border: 0;
   text-align: ceneter;
 }
 
-.more-activities .card-body {
+.more-membership .card-body {
   -moz-text-align-last: center;
   text-align-last: center;
 }
 
-.more-activities .card-title a {
+.more-membership .card-title a {
   font-weight: 600;
   font-size: 18px;
   color: #334240;
   transition: ease-in-out 0.3s;
 }
 
-.more-activities .card-title a:hover {
+.more-membership .card-title a:hover {
   color: #115b9c ;
 }
 
-.more-activities .btn {
+.more-membership .btn {
   border-radius: 50px;
   padding: 4px 30px 6px 30px;
   border: 2px solid #115b9c ;
 }
 
-.more-activities .btn:hover {
+.more-membership .btn:hover {
   color: #fff;
   background: #115b9c ;
 }
 
 /*--------------------------------------------------------------
-# Info Box
+# More Information Section
 --------------------------------------------------------------*/
 .info-box .content {
   padding: 60px 100px 0 100px;
@@ -1242,163 +1286,30 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Us
+# Contact Us Section
 --------------------------------------------------------------*/
-.contact .infos {
-  position: relative;
-  z-index: 2;
+#contact{
+  background: #efefef;
+  color: #777;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
-
-.contact .info {
-  padding: 60px;
-  background: #fff;
-  color: #334240;
+.contact.container {
   text-align: center;
-  box-shadow: -5px -5px 40px 0 rgba(0, 0, 0, 0.1);
 }
-
-.contact .info i {
-  font-size: 48px;
-  color: #7a92ba;
-  margin-bottom: 15px;
+.contact-form{
+  padding: 20px;
 }
-
-.contact .info h4 {
-  padding: 0;
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-}
-
-.contact .info p {
-  font-size: 15px;
-}
-
-.contact .info-bg {
-  background: white;
-}
-
-.contact .contact-form-wrap {
-  box-shadow: 10px -5px 40px 0 rgba(0, 0, 0, 0.1);
+.follow{
   background: #fff;
-  position: relative;
-  z-index: 1;
-  padding: 30px;
+  margin: 15px;
+  padding: 10px;
 }
-
-.contact .php-email-form {
-  width: 100%;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form label {
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 5px;
-  color: #5f7c78;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #115b9c ;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #fff;
-  border: 2px solid #115b9c ;
-  padding: 10px 24px;
-  color: #115b9c ;
-  transition: 0.4s;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #115b9c ;
-  color: #fff;
-}
-
-@media (max-width: 1024px) {
-  .contact .info {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact .php-email-form {
-    padding: 15px 0 0 0;
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #344341;
+  background: #115b9c;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1433,7 +1344,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #58716d;
+  background: #c86c64;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1494,7 +1405,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #40e4ca;
+  color: #c86c64;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1527,7 +1438,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #158f7c;
+  background: #c86c64;
 }
 
 #footer .copyright {
