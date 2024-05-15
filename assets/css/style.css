@@ -733,6 +733,49 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
+
+
+/*--------------------------------------------------------------
+# campaign
+--------------------------------------------------------------*/
+.plot {
+  background: linear-gradient(rgba(66, 84, 81, 0.5), rgba(43, 56, 54, 0.5)), url("../images/Lands.jpeg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.plot h3 {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  
+}
+
+.plot p {
+  color: #fff;
+}
+
+.plot .plot-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  background-color: #115b9c;
+  /* border: 2px solid #115b9c ; */
+  color: #fff;
+}
+
+.plot .plot-btn:hover {
+  background: #115b9c ;
+  border: 2px solid #115b9c ;
+}
+
+
 /*--------------------------------------------------------------
 # campaign
 --------------------------------------------------------------*/
