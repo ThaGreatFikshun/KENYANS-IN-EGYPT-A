@@ -1272,7 +1272,7 @@ ul li{
 #contact {
   background: #efefef;
   color: #777;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .contact .section-title {
@@ -1280,8 +1280,16 @@ ul li{
   margin-bottom: 40px;
 }
 
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .contact .contact-info {
-  margin-bottom: 30px;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding: 15px;
 }
 
 .contact .contact-card {
@@ -1318,6 +1326,11 @@ ul li{
 }
 
 @media (max-width: 767px) {
+  .contact .contact-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
   .contact .contact-card {
     padding: 15px;
   }
@@ -1330,6 +1343,7 @@ ul li{
     font-size: 16px;
   }
 }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
