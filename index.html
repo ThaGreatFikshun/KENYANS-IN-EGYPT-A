@@ -229,12 +229,12 @@
               <p>We have accomplished 40% on Investment Sector.</p>
 
               <div class="progress">
-                <span class="skill">Savings Account <i class="val">30%</i></span>
+                <span class="skill">Savings Account <i class="val">50%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
-              <p>We have accomplished about 30% on savings.</p>
+              <p>We have accomplished about 50% on savings.</p>
 
             </div>
 
@@ -243,6 +243,30 @@
 
       </div>
     </section><!-- End About Us Section -->
+
+      <!-- ======= Prime Plots for Sale Section ======= -->
+      <section class="plot">
+        <div class="container">
+          <div class="text-center">
+            <h3>Explore Prime Plots for Sale</h3>
+            <p class="color-success">Discover Exclusive Plots Available in Prime Locations:</p>
+            <div class="location">
+              <h3>Konza - Only 3 Kilometers from Konza Technopolis</h3>
+              <p>Explore prime plots located just a short distance from the vibrant Konza City.</p>
+            </div>
+            <div class="location">
+              <h3>Chumvi Township - Just 800 Meters off Mombasa Road</h3>
+              <p>Exceptional plots situated in the heart of Chumvi Township, offering convenience and accessibility.</p>
+            </div>
+            <div class="location">
+              <h3>Kisingo - Merely 5 Kilometers from Wote, along the Makindu Road (16 Kilometers from Makindu Town)</h3>
+              <p>Discover the beauty of Kisingo with strategically located plots for your consideration.</p>
+            </div>
+            <a href="#contact" class="plot-btn btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Prime Plots for Sale Section -->
 
     <!-- ======= What We is guaranteed ======= -->
     <section id="activito" class="counts section-bg">
@@ -266,9 +290,10 @@
                 <li>We rehabilitate the depressed until they are stable.</li>
                 <li>We do prison visitations.</li>
                 <li>We wave contributions for the terminally ill members who cannot work.</li>
+                <li>We provide educational support for the children of our deceased members.</li>
               </ul>
                 </div>
-              <a href="#contact">Find out more &raquo;</a>
+              <a class="btn-primary" onclick="openContactPopup()">Find out more &raquo;</a>
             </div>
           </div>
 
@@ -282,10 +307,10 @@
                 <ol type="A">
                   <li>Member sickness.</li>
                   <li>Death of A member.</li>
-                  <li>Deportation of A member(Egypt only).</li>
+                  <li>Deportation of A member.</li>
                   <li>Death of A member's nuclear family.</li></ul>
                 </div>
-              <a href="#contact">Find out more &raquo;</a>
+              <a class="btn-primary" onclick="openContactPopup()">Find out more &raquo;</a>
             </div>
           </div>
 
@@ -302,7 +327,7 @@
                   <li>We venture in Real Estates</li>
                 </ul>
                 </div>
-              <a href="#contact">Find out more &raquo;</a>
+              <a class="btn-primary" onclick="openContactPopup()">Find out more &raquo;</a>
             </div>
           </div>
 
@@ -319,7 +344,7 @@
                   
                 </ul>
                 </div>
-              <a href="#contact">Find out more &raquo;</a>
+              <a class="btn-primary" onclick="openContactPopup()">Find out more &raquo;</a>
             </div>
           </div>
 
@@ -328,38 +353,167 @@
       </div>
     </section><!-- End Counts Section -->
 
+
    <!-- ======= Our Activities Section ======= -->
-    <section id="membership" class="activito">
-      <div class="section-title">
-        <h1>MEMBERSHIP PLAN</h1>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="single-activito">
-              <div class="activito-head">
-                <h2>KIEA SACCO</h2>
-                <p>You Pay</p>
-              </div>
-              <div class="activito-content">
-                <ul>
-                  <li>1. Registration is available.</li>
-                  <li>2. Covers the total number of months other members have paid in full.</li>
-                  <li>3. Registration fee is Ksh 2,000.</li>
-                  <li>4. Monthly savings of Ksh 1,250.</li>
-                  <li>5. Interest payment is 30% of all savings.</li>
-                </ul>
-              </div>
-              <div class="activito-button">
-                <button href="#contact" class="btn btn-primary" aria-disabled>Open</button>
-              </div>
+   <section id="membership" class="activito">
+    <div class="section-title">
+      <h1>MEMBERSHIP PLAN</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="single-activito">
+            <div class="activito-head">
+              <h2>KIEA SHARES</h2>
+              <p>You Pay</p>
+            </div>
+            <div class="activito-content">
+              <ul>
+                <li>1. Shares are available.</li>
+                <li>2. Covers 100% of other members savings.</li>
+                <li>3. Membership fee is Ksh 1,000.</li>
+                <li>4. Monthly contribution of Ksh 1,250.</li>
+                <li>5. Interest payment is 30% of shares total amount.</li>
+              </ul>
+            </div>
+            <div class="activito-button">
+              <button class="btn btn-primary" onclick="openContactPopup()">Open</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- Add your content for column 2 -->
+          <div class="single-activito">
+            <div class="activito-head">
+              <h2>KIEA SAVINGS & LOANS </h2>
+              <!-- <p>You Pay</p> -->
+            </div>
+            <div class="activito-content">
+              <ul>
+                <li>1. Membership fee Ksh 1000</li>
+                <li>2. Monthly minimum savings Ksh 1000</li>
+                <li>3. Get loan 3 times your savings for individuals and 5 times for chamas.</li>
+                <li>4. Interest on loan is 13% p.a</li>
+                <li>5. Interest on savings is 2% p.a</li>
+              </ul>
+            </div>
+            <div class="activito-button">
+              <button class="btn btn-primary" onclick="openContactPopup()">Open</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- Add your content for column 3 -->
+          <div class="single-activito">
+            <div class="activito-head">
+              <h2>KIEA- LAST RESPECT COVER 
+                SUBSCRIPTION PER YEAR </h2>
+              <!-- <p>You Pay</p> -->
+            </div>
+            <div class="activito-content">
+              <ul>
+                <li>Ksh 2500 p.a = 50,000k</li>
+                <li>Ksh 5000 p.a = 100,000k</li>
+                <li>Ksh 7500 p.a = 150,000k</li>
+                <li>Ksh 10,000 p.a = 200,000k</li>
+                <li>Ksh 150000 p.a = 300,000k</li>
+                <li>Ksh 20,000 p.a = 400,000k</li>
+              </ul>
+              <p style="text-align: center;">"Those who live wisely never fear death"</p>
+            </div>
+            <div class="activito-button">
+              <button class="btn btn-primary" onclick="openContactPopup()">Open</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- Add your content for column 4 -->
+          <div class="single-activito">
+            <div class="activito-head">
+              <h2>KIEA -KCB BANK ACCOUNT OPENING</h2>
+              <p>In DIASPORA</p>
+            </div>
+            <div class="activito-content">
+              <p>Requirements for Account Opening:</p>
+              <ul>
+                <li>1. A copy of a Passport or National ID card.</li>
+                <li>2. Duly completed account opening form.</li>
+                <li>3. Coloured passport photo.</li>
+                <li>4. Proof of residency.</li>
+                <li>5. A Kra pin.</li>
+              </ul>
+            </div>
+            <div class="activito-button">
+              <button class="btn btn-primary" onclick="openContactPopup()">Open</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+
+  <!-- Contact Popup -->
+<div id="contact-popup" class="popup">
+  <div class="popup-content">
+    <h2>Contact Us</h2>
+    <h3>Main Office Details:</h3>
+    <p>Phone: <a href="https://wa.me/+254721392884">+20 115 701 3950 | +254 721 392 884 </a></p>
+    <p>Email: <a href="mailto:kenyanreunionegypt@yahoo.com">kenyanreunionegypt@yahoo.com</a></p>
+    <!-- <p>Address:</p>
+    <p>Kenyans In Egypt Association</p> -->
+    <h3>In Kenya we are located at:</h3>
+    <p>ASIL PLACE, KAMITI RD - MAZIWA STAGE, 1ST FLR, SUITE B06B.</p>
+    <p>CONTACT: <a href="https://wa.me/+254790026053">+254790026053</a></p>
+    <br>
+    <h3>In Cairo Egypt we are located at:</h3>
+    <p>77 STREET-MAADI</p>
+    <p>CONTACT: <a href="https://wa.me/+20115696364">+20115696364, +201157013950</a></p>
+    <button class="btn btn-primary" onclick="closeContactPopup()">Close</button>
+  </div>
+</div>
+
+<script>
+  function openContactPopup() {
+    document.getElementById('contact-popup').style.display = 'block';
+  }
+
+  function closeContactPopup() {
+    document.getElementById('contact-popup').style.display = 'none';
+  }
+</script>
+
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+</style>
 
     <!-- End Our Activities Section -->
+
+    <!-- JS for smooth scroll to contact  -->
+    <script>
+      function scrollToContact() {
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+    <!-- End of the script  -->
 
     <!-- ======= campaign Section ======= -->
     <section class="campaign">
@@ -446,7 +600,7 @@
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> How do I register? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                      You can register by contacting us through  <a href="#contact">this link</a>
+                      You can register by contacting us through  <a class="btn-primary" onclick="openContactPopup()">this link</a>
                     </p>
                   </div>
                 </li>
@@ -471,289 +625,290 @@
       </div>
     </section><!-- End Info Box Section -->
 
-    <!-- ======= Our gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
-      <div class="container">
+    <!-- ======= Our Gallery Section ======= -->
+<section id="gallery" class="gallery section-bg">
+  <div class="container">
 
-        <div class="section-title">
-          <h2>Gallery </h2>
-          <p>Welcome to Kenyans In Egypt Photo Gallery.</p>
-        </div>
+    <div class="section-title">
+      <h2>Gallery</h2>
+      <p>Welcome to Kenyans In Egypt Photo Gallery.</p>
+    </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="gallery-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Awards</li>
-              <li data-filter=".filter-card">Teamwork</li>
-              <li data-filter=".filter-web">Achievements</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gallery-container">
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-app">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/achievement (1).jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Phase 1 achievement</h4>
-                <p>In 2022</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/achievement (1).jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-web">
-            <div class="gallery-wrap">
-              <img src="assets/images/slideshow/event.jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Achievement</h4>
-                <p>Hosted Erick Omondi In Egypt at KIEA events</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/img/gallery/gallery-2.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-app">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/chairladyaward.jpg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Chairlady Award</h4>
-                <p>Given by the Ambassador In Egypt</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/img/gallery/gallery-3.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-card">
-            <div class="gallery-wrap">
-              <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Teamwork</h4>
-                <p>SACCO Meeting</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/general sacco meeting.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-web">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/kiea group A.jpg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>KIEA GROUP</h4>
-                <p>United we are are</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/kiea group A.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-app">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/media.jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Media Achievement</h4>
-                <p>Daring Abroad Cast</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/media.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-card">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/visitation.jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Visitations</h4>
-                <p>Book Launch</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/visitation.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-card">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/visit.jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Hosted Erick Omondi and other prominent people in Egypt</h4>
-                <p>Visits</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/visit.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 gallery-item filter-web">
-            <div class="gallery-wrap">
-              <img src="assets/images/testimonials/celebration.jpeg" class="img-fluid" alt="">
-              <div class="gallery-info">
-                <h4>Celebrations</h4>
-                <p>We Celebrated together with Comedian Erick Omondi from Kenya</p>
-              </div>
-              <div class="gallery-links">
-                <a href="assets/images/testimonials/celebration.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="gallery-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our gallery Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our Team</h2>
-          <p>These are our team Members.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="member">
-              <img src="assets/images/ourteam/jessy.jpeg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Jacinta Mbithe(Mama Africa)</h4>
-                  <span>Founder & CEO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
-            <div class="member">
-              <img src="assets/images/ourteam/teresia1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Teresia Opiyo</h4>
-                  <span>Board Member Sect. A KIEA.</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="assets/images/ourteam/judy1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Judy Ohuru</h4>
-                  <span>KIEA Overall Secretary</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="assets/images/ourteam/enock.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Enock Obaigwa</h4>
-                  <span>Coordinator(Invest. Sector)</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="assets/images/ourteam/barnabas.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Barnabas Mwaka</h4>
-                  <span>Overall PR Officer</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Team Section -->
-   <!-- ======= Contact Us Section ======= -->
-   <section id="contact">
-    <div class="container" style="text-align: center;">
-    <h1>CONTACT US TODAY</h1>
-    <P>You can reach us through any of the provided option below</P>
     <div class="row">
-    <div class="col-md-6 contact-info">
-    <div class="follow"><b>Main Email: </b>&nbsp;<i class="fa fa-envelope"></i>&nbsp;kenyanreunionegypt@yahoo.com</div>
-    
-    <div class="follow"><b>Admin1 : </b>&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+20 112 135 5580 &nbsp; <i class="fa fa-phone">&nbsp;+254 724 523 767 </i><b>Jessy</b></div> 
-    
-    <div class="follow"><b>Admin2: </b>&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+254 743 941 476 &nbsp; <i class="fa fa-phone">&nbsp;+20 112 314 8222 </i><b> Judy Ohuru</b></div>
-    
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="gallery-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Awards</li>
+          <li data-filter=".filter-card">Teamwork</li>
+          <li data-filter=".filter-web">Achievements</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-6 contact-info">
-    
-    <div class="follow"><b>Address: </b>&nbsp; <i class="fa fa-map-marker"></i>&nbsp;Kenyans In Egypt Association</div>
-    
-    <div class="follow"><b>Office Contact: </b>&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;+20 115 701 3950 &nbsp; <i class="fa fa-phone"></i>&nbsp;+254 721 392 884 <b>Barnabas</b> </div>
-    
+
+    <div class="row gallery-container">
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-app">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/achievement (1).jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Phase 1 achievement</h4>
+            <p>In 2022</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/achievement (1).jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-web">
+        <div class="gallery-wrap">
+          <img src="assets/images/slideshow/event.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Achievement</h4>
+            <p>Hosted Erick Omondi In Egypt at KIEA events</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/img/gallery/gallery-2.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-app">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/chairladyaward.jpg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Chairlady Award</h4>
+            <p>Given by the Ambassador In Egypt</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/img/gallery/gallery-3.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-card">
+        <div class="gallery-wrap">
+          <img src="assets/images/slideshow/teamwork.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Teamwork</h4>
+            <p>SACCO Meeting</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/general sacco meeting.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-web">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/kiea group A.jpg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>KIEA GROUP</h4>
+            <p>United we are are</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/kiea group A.jpg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-app">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/media.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Media Achievement</h4>
+            <p>Daring Abroad Cast</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/media.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-card">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/visitation.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Visitations</h4>
+            <p>Book Launch</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/visitation.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-card">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/visit.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Hosted Erick Omondi and other prominent people in Egypt</h4>
+            <p>Visits</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/visit.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 gallery-item filter-web">
+        <div class="gallery-wrap">
+          <img src="assets/images/testimonials/celebration.jpeg" class="img-fluid" alt="">
+          <div class="gallery-info">
+            <h4>Celebrations</h4>
+            <p>We Celebrated together with Comedian Erick Omondi from Kenya</p>
+          </div>
+          <div class="gallery-links">
+            <a href="assets/images/testimonials/celebration.jpeg" data-gallery="galleryGallery" class="gallery-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+  </div>
+</section>
+<!-- End Our Gallery Section -->
+
+   <!-- ======= Our Team Section ======= -->
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Team</h2>
+      <p>Meet the dedicated team behind our organization.</p>
     </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="member">
+          <img src="assets/images/ourteam/jessy.jpeg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Jacinta Mbithe (Mama Africa)</h4>
+              <span>Founder & CEO</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="member">
+          <img src="assets/images/ourteam/judy1.jpg" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Judy Ohuru</h4>
+              <span>KIEA Overall Secretary</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="member">
+          <img src="assets/images/ourteam/barnabas.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>Barnabas Mwaka</h4>
+              <span>Overall PR Officer</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-   <!-- End Contact Us Section -->
+  </div>
+</section>
+<!-- End Our Team Section -->
+<!-- ======= Contact Us Section ======= -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h1>CONTACT US TODAY</h1>
+      <p>You can reach us through any of the provided options below</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 contact-info">
+        <div class="contact-card">
+          <i class="fa fa-envelope"></i>
+          <h3>Main Email</h3>
+          <p>kenyanreunionegypt@yahoo.com</p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 contact-info">
+        <div class="contact-card">
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-phone"></i>
+          <h3>Admin1</h3>
+          <p><a href="https://wa.me/201121355580">+20 112 135 5580</a></p>
+          <p><a href="tel:+254724523767">+254 724 523 767</a></p>
+          <p><b>Jessy</b></p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 contact-info">
+        <div class="contact-card">
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-phone"></i>
+          <h3>Admin2</h3>
+          <p><a href="https://wa.me/254743941476">+254 743 941 476</a></p>
+          <p><a href="tel:+201123148222">+20 112 314 8222</a></p>
+          <p><b>Judy Ohuru</b></p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 contact-info">
+        <div class="contact-card">
+          <i class="fa fa-map-marker"></i>
+          <h3>Address</h3>
+          <p>Kenyans In Egypt Association</p>
+          <p>ASIL PLACE, KAMITI RD- MAZIWA STAGE, 1ST FLR, SUITE B06B.</p>
+          <p>CONTACT: <a href="tel:+254790026053">0790026053</a></p>
+          <p>CAIRO EGYPT, 77 STREET-MAADI</p>
+          <p>CONTACT: <a href="tel:+20115696364">+20115696364</a>, <a href="tel:+201157013950">+201157013950</a></p>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 contact-info">
+        <div class="contact-card">
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-phone"></i>
+          <h3>Office Contact</h3>
+          <p><a href="https://wa.me/201157013950">+20 115 701 3950</a></p>
+          <p><a href="tel:+254721392884">+254 721 392 884</a></p>
+          <p><b>Barnabas</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Us Section -->
+
 
   </main><!-- End #main -->
 
@@ -784,8 +939,8 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">membership</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#membership">membership</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -794,22 +949,78 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our membership</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Welfare</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tourism</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Insurance</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Savings Accounts</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Become a partner</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#activito">Welfare</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#activito">Tourism</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#activito">Insurance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#membership">Savings Accounts</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="btn-primary" onclick="openContactPopup()">Become a partner</a></li>
             </ul>
           </div>
 
+          <!-- Newsletter subscription  -->
           <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe using your email to get updates on the newsletters</p>
+            <form id="newsletter-form" onsubmit="subscribeNewsletter(event)">
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+          
+          <script>
+            function subscribeNewsletter(event) {
+              event.preventDefault(); // Prevent form submission
+          
+              let email = document.getElementById('email').value;
+          
+              // Basic client-side email validation
+              if (validateEmail(email)) {
+                // Send email to info@admin.com
+                sendNotification(email);
+              } else {
+                alert('Please enter a valid email address.');
+              }
+            }
+          
+            function validateEmail(email) {
+              // Basic email validation using regex
+              const re = /\S+@\S+\.\S+/;
+              return re.test(email);
+            }
+          
+            function sendNotification(email) {
+              // Simulate sending email to info@admin.com
+              fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  email: email,
+                  to: 'kenyanreunionegypt@yahoo.com',
+                  subject: 'New Newsletter Subscription',
+                  message: `A new user has subscribed to the newsletter with email: ${email}`,
+                }),
+              })
+                .then((response) => response.json())
+                .then((data) => {
+                  alert('A notification has been sent to info@admin.com for newsletter subscription.');
+                })
+                .catch((error) => {
+                  console.error('Error:', error);
+                  alert('An error occurred while processing your subscription. Please try again later.');
+                });
+            }
+          </script>
+
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Subscribe using your email to get updates on the news letters</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -817,7 +1028,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy;2023 Kenyans In Egypt Association
+        &copy;2024 Kenyans In Egypt Association
       </div>
     </div>
   </footer><!-- End Footer -->
